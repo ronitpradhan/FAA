@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:background="#111111"
+        android:layout_above="@+id/linearLayout">
+
+        <TextView
+            android:text="Contact"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact"/>
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:text="@string/contact_details"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="normal"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact_email"
+            android:layout_below="@+id/contact_details"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:text="@string/contact_name"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="normal"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact_details"
+            android:layout_below="@+id/contact"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#848484"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#333333"
+            android:text="@string/rights"
+            android:textColor="#ffffff"
+            android:textSize="10pt"
+            android:layout_gravity="bottom"
+        />
+    </LinearLayout>
+</RelativeLayout>
+
