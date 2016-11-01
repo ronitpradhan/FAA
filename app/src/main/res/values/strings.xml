@@ -4,5 +4,6 @@
     <string name="edit_search">Enter Injury!</string>
     <string name="search_button">Search</string>
     <string name="rights">All rights reserved by respective owners.</string>
-
+    <string name="contact_name">\nRonit Pradhan</string>
+    <string name="contact_details">Email:\nrnt_ronit@hotmail.com\nronit288@gmail.com</string>
 </resources>
