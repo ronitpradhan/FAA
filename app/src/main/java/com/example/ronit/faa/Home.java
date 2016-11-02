@@ -8,20 +8,24 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class Home extends AppCompatActivity implements View.OnClickListener {
-
+    FirstDatabaseAdapter firstHelper;
     Button search_button;
     EditText edit_search;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+
         search_button= (Button) findViewById(R.id.search_button);
         search_button.setOnClickListener(this);
         edit_search=(EditText) findViewById(R.id.edit_search);
+        firstHelper=new FirstDatabaseAdapter(this);
 
+        //SQLiteDatabase db =firstHelper.getReadableDatabase();
     }
 
     @Override
@@ -62,7 +66,13 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
      */
     @Override
     public void onClick(View v) {
-        String search= edit_search.getText().toString();
-        Toast.makeText(Home.this, search+" "+"was entered.", Toast.LENGTH_SHORT).show();
+       //String search= edit_search.getText().toString();
+        //Toast.makeText(Home.this, search+" "+"was entered.", Toast.LENGTH_SHORT).show();
+        String data= firstHelper.getAllData();
+        Message.message(this,data);
+
     }
+
+
+
 }
