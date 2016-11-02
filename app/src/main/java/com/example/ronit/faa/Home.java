@@ -67,8 +67,8 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
      */
     @Override
     public void onClick(View v) {
-       String search1= edit_search.getText().toString();
-        Toast.makeText(Home.this, search1+" "+"was entered.", Toast.LENGTH_SHORT).show();
+       String search= edit_search.getText().toString();
+        Toast.makeText(Home.this, search+" "+"was entered.", Toast.LENGTH_SHORT).show();
 
     }
 
