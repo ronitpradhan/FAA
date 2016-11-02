@@ -68,8 +68,12 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
        //String search= edit_search.getText().toString();
         //Toast.makeText(Home.this, search+" "+"was entered.", Toast.LENGTH_SHORT).show();
+
+        //Message.message(this,data);
+        Intent intent= new Intent(Home.this, Index.class);
         String data= firstHelper.getAllData();
-        Message.message(this,data);
+        intent.putExtra("key", data);
+        startActivity(intent);
 
     }
 
