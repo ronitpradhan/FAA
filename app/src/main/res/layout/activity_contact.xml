@@ -62,7 +62,7 @@
             android:background="#333333"
             android:text="@string/rights"
             android:textColor="#ffffff"
-            android:textSize="10pt"
+            android:textSize="15dp"
             android:layout_gravity="bottom"
         />
     </LinearLayout>
