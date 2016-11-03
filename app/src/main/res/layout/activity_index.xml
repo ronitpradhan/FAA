@@ -2,33 +2,22 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"                     android:layout_height="match_parent"
     android:background="#848484">
-<TextView
-    android:id="@+id/gotit"
-    android:paddingTop="20dp"
-    android:paddingLeft="20dp"
-    android:fontFamily="sans-serif-smallcaps"
-    android:textStyle="bold"
-    android:textSize="35dp"
-    android:textColor="#ffffff"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-/>
 
     <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentStart="true"
-    android:id="@+id/linearLayout">
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#333333"
-        android:text="@string/rights"
-        android:textColor="#ffffff"
-        android:textSize="10pt"
-        android:layout_gravity="bottom"
-        />
-</LinearLayout>
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#333333"
+            android:text="@string/rights"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_gravity="bottom"
+            />
+    </LinearLayout>
 </RelativeLayout>

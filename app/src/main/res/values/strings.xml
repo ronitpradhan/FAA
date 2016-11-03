@@ -4,6 +4,7 @@
     <string name="search_hint">Enter Injury!</string>
     <string name="search_button">Search</string>
     <string name="rights">All rights reserved by respective owners.</string>
+    <string name="nodata">\t\t\tSorry we do not have the information you are seeking. Please go back to ener the name of the injury again or call the ambulance incase of emergency. Nepal Red Cross Society ambulance number: 01-4228094 </string>
     <string name="contact_name">\nRonit Pradhan</string>
-    <string name="contact_details">Email:\nrnt_ronit@hotmail.com\nronit288@gmail.com</string>
+    <string name="contact_details">\nEmail:\nrnt_ronit@hotmail.com\nronit288@gmail.com\n\nPhone:\n9849471112\n9801071112</string>
 </resources>
