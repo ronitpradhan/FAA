@@ -5,6 +5,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.util.Random;
+
 /**
  * Created by RONIT on 11/2/2016.
  */
@@ -32,7 +34,23 @@ public class FirstDatabaseAdapter {
         }
         return buffer.toString();
     }
+    public String getRandomData(){
+        Random rand=new Random();
+        int r1= rand.nextInt(8-1)+1;
+        SQLiteDatabase db = helper.getWritableDatabase();
+        String[] columns = {FirstHelper.NAME, FirstHelper.DETAIL};
+        Cursor cursor = db.query(FirstHelper.TABLE_NAME, columns, FirstHelper.UID+"='"+r1+"'", null, null, null, null);
+        StringBuffer buffer1=new StringBuffer();
+        while (cursor.moveToNext()) {
+            int index1 = cursor.getColumnIndex(FirstHelper.NAME);
+            int index2 = cursor.getColumnIndex(FirstHelper.DETAIL);
+            String name = cursor.getString(index1);
+            String detail = cursor.getString(index2);
+            buffer1.append(name+"\n"+detail);
 
+        }
+        return buffer1.toString();
+    }
     static class FirstHelper extends SQLiteOpenHelper {
         private static final String DATABASE_NAME = "first";
         private static final String TABLE_NAME = "info";
