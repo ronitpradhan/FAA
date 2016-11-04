@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class Home extends AppCompatActivity{
    FirstDatabaseAdapter firstHelper;
@@ -19,9 +20,14 @@ public class Home extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        firstHelper=new FirstDatabaseAdapter(this);
+        String randText = firstHelper.getRandomData();
+        TextView tt1 = (TextView) findViewById(R.id.randomText);
+        tt1.setText(randText);
+
         search_button= (Button) findViewById(R.id.search_button);
         edit_search=(EditText) findViewById(R.id.edit_search);
-        firstHelper=new FirstDatabaseAdapter(this);
+
         search_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
@@ -85,7 +91,4 @@ public class Home extends AppCompatActivity{
         Message.message(this,data);
 
     }*/
-
-
-
 }
