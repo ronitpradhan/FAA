@@ -36,10 +36,10 @@ public class FirstDatabaseAdapter {
     }
     public String getRandomData(){
         Random rand=new Random();
-        int r= rand.nextInt(8-1)+1;
+        int r1= rand.nextInt(8-1)+1;
         SQLiteDatabase db = helper.getWritableDatabase();
         String[] columns = {FirstHelper.NAME, FirstHelper.DETAIL};
-        Cursor cursor = db.query(FirstHelper.TABLE_NAME, columns, FirstHelper.UID+"='"+r+"'", null, null, null, null);
+        Cursor cursor = db.query(FirstHelper.TABLE_NAME, columns, FirstHelper.UID+"='"+r1+"'", null, null, null, null);
         StringBuffer buffer1=new StringBuffer();
         while (cursor.moveToNext()) {
             int index1 = cursor.getColumnIndex(FirstHelper.NAME);
