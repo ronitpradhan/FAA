@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 public class Home extends AppCompatActivity{
    FirstDatabaseAdapter firstHelper;
-    Info title;
     Button search_button;
     EditText edit_search;
 
@@ -20,6 +19,7 @@ public class Home extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
         firstHelper=new FirstDatabaseAdapter(this);
         String randText = firstHelper.getRandomData();
         TextView tt1 = (TextView) findViewById(R.id.randomText);
@@ -36,6 +36,7 @@ public class Home extends AppCompatActivity{
                 Intent intent = new Intent(Home.this, Info.class);
                 String data= firstHelper.getData(search);
                 //Message.message(Home.this,data);
+                intent.putExtra("keyHead", search);
                 intent.putExtra("key", data);
                 startActivity(intent);
             }

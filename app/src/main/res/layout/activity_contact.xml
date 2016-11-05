@@ -10,7 +10,7 @@
         android:layout_above="@+id/linearLayout">
 
         <TextView
-            android:text="Contact"
+            android:text="@string/contact_head"
             android:paddingTop="20dp"
             android:paddingLeft="20dp"
             android:fontFamily="sans-serif-smallcaps"
@@ -24,7 +24,6 @@
         <TextView
             android:gravity="center_horizontal"
             android:text="@string/contact_details"
-            android:fontFamily="sans-serif-smallcaps"
             android:textStyle="normal"
             android:textSize="20dp"
             android:textColor="#ffffff"
