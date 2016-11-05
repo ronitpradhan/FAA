@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -13,7 +14,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
  * Created by RONIT on 11/1/2016.
  */
 public class Info extends AppCompatActivity {
-
+    EditText edit_search;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -26,9 +27,12 @@ public class Info extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
         Intent recIntent = getIntent();
-        String gotit2 = recIntent.getStringExtra("key");
+        String head=recIntent.getStringExtra("keyHead");
+        String detailInfo = recIntent.getStringExtra("key");
+        TextView t = (TextView) findViewById(R.id.titleInfo);
+        t.setText(head);
         TextView tt = (TextView) findViewById(R.id.gotit2);
-        tt.setText(gotit2);
+        tt.setText(detailInfo);
     }
 
 

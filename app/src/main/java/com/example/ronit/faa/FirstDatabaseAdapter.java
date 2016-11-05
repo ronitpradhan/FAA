@@ -29,7 +29,7 @@ public class FirstDatabaseAdapter {
             int index2 = cursor.getColumnIndex(FirstHelper.DETAIL);
             //String name = cursor.getString(index1);
             String detail = cursor.getString(index2);
-            buffer.append(detail);
+            buffer.append("\t\t\t\t\t"+detail);
 
         }
         return buffer.toString();
@@ -46,7 +46,7 @@ public class FirstDatabaseAdapter {
             int index2 = cursor.getColumnIndex(FirstHelper.DETAIL);
             String name = cursor.getString(index1);
             String detail = cursor.getString(index2);
-            buffer1.append(name+"\n"+detail);
+            buffer1.append("Today's Help:"+"\n\n"+name+"\n"+"\t\t\t\t\t"+detail);
 
         }
         return buffer1.toString();
