@@ -33,7 +33,7 @@ public class Home extends AppCompatActivity{
 
         } catch (IOException ioe) {
 
-            throw new Error("Unable to create database");
+            throw new Error("Unable to Create Database");
 
         }
 
