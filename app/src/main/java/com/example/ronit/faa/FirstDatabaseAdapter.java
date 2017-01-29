@@ -74,6 +74,7 @@ public class FirstDatabaseAdapter {
         public FirstHelper(Context context) {
             super(context, DATABASE_NAME, null, DATABASE_VERSION);
             this.context = context;
+            
             //Message.message(context, "constructor was called");
 
         }
