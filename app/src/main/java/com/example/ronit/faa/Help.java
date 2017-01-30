@@ -16,7 +16,7 @@ import android.widget.Toast;
  */
 
 public class Help extends AppCompatActivity{
-    public static final String MY_PREFS_NAME = "PhonePrefs";
+    public static final String MY_PREFS_NAME = "PhonePreferences";
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +33,8 @@ public class Help extends AppCompatActivity{
             {
                 //String message="Hello";
                 //Message.message(Help.this,message);
-                String messageToSend = "Help!!! Its an emergency!!! Call an ambulance!!! I am injured. Call me!!!";
-                SharedPreferences settings = getSharedPreferences(MY_PREFS_NAME, 0);
+                String messageToSend = "Help!!! Its an emergency!!! Call an ambulance!!! I am injured!!! Call me!!!";
+                SharedPreferences settings = getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE);
                 String number = settings.getString("phone","");
                //String number = "9849471112";
 
@@ -51,7 +51,7 @@ public class Help extends AppCompatActivity{
                 }
                 catch (Exception e)
                 {
-                    Toast.makeText(getApplicationContext(),"SMS failed, please enable SMS permission for the application",
+                    Toast.makeText(getApplicationContext(),"SMS failed, please enable SMS permission for the application or enter a mobile number in SETTINGS",
                             Toast.LENGTH_LONG).show();
                     e.printStackTrace();
                 }

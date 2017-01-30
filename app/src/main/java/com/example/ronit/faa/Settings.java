@@ -16,7 +16,7 @@ import android.widget.EditText;
 public class Settings extends AppCompatActivity {
     EditText edit_Text2;
     Button number_button;
-    public static final String MY_PREFS_NAME = "PhonePrefs";
+    public static final String MY_PREFS_NAME = "PhonePreferences";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,8 +31,11 @@ public class Settings extends AppCompatActivity {
             {
                 String search= edit_Text2.getText().toString();
                 Message.message(Settings.this,"Phone Number Submitted");
-                SharedPreferences settings = getSharedPreferences(MY_PREFS_NAME, 0);
+
+                SharedPreferences settings = getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE);
                 SharedPreferences.Editor editor = settings.edit();
+                editor.clear();
+                editor.commit();
                 editor.putString("phone",search);
                 editor.commit();
 
