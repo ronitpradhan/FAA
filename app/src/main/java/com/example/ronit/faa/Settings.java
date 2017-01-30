@@ -38,7 +38,7 @@ public class Settings extends AppCompatActivity {
                 this.startActivity(intent);
                 break;
             case R.id.item4:
-                intent = new Intent(Settings.this, Index.class);
+                intent = new Intent(Settings.this, Help.class);
                 this.startActivity(intent);
                 break;
             default:

@@ -11,7 +11,7 @@
         android:title="CONTACT" />
     <item
         android:id="@+id/item4"
-        android:title="INDEX" />
+        android:title="HELP" />
 
 
 </menu>

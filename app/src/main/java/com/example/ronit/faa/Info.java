@@ -60,7 +60,7 @@ public class Info extends AppCompatActivity {
                 this.startActivity(intent);
                 break;
             case R.id.item4:
-                intent = new Intent(Info.this, Index.class);
+                intent = new Intent(Info.this, Help.class);
                 this.startActivity(intent);
                 break;
             default:

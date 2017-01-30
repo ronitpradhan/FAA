@@ -42,7 +42,7 @@ public class Contact extends AppCompatActivity {
                 this.startActivity(intent);
                 break;
             case R.id.item4:
-                intent = new Intent(Contact.this, Index.class);
+                intent = new Intent(Contact.this, Help.class);
                 this.startActivity(intent);
                 break;
             default:

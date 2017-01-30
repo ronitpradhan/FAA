@@ -60,7 +60,7 @@ public class Home extends AppCompatActivity{
             @Override
             public void onClick(View v)
             {
-                String search= edit_search.getText().toString();
+                String search= edit_search.getText().toString().toUpperCase();
                 Intent intent = new Intent(Home.this, Info.class);
                 String data= secondHelper.getData(search);
                 //Message.message(Home.this,data);
@@ -96,7 +96,7 @@ public class Home extends AppCompatActivity{
                 this.startActivity(intent);
                 break;
             case R.id.item4:
-                intent = new Intent(Home.this, Index.class);
+                intent = new Intent(Home.this, Help.class);
                 this.startActivity(intent);
                 break;
             default:
