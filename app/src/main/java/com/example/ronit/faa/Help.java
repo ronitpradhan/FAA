@@ -1,6 +1,7 @@
 package com.example.ronit.faa;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.telephony.SmsManager;
@@ -15,7 +16,9 @@ import android.widget.Toast;
  */
 
 public class Help extends AppCompatActivity{
+    public static final String MY_PREFS_NAME = "PhonePrefs";
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
@@ -31,7 +34,9 @@ public class Help extends AppCompatActivity{
                 //String message="Hello";
                 //Message.message(Help.this,message);
                 String messageToSend = "Help!!! Its an emergency!!! Call an ambulance!!! I am injured. Call me!!!";
-               String number = "9849471112";
+                SharedPreferences settings = getSharedPreferences(MY_PREFS_NAME, 0);
+                String number = settings.getString("phone","");
+               //String number = "9849471112";
 
                 //SmsManager.getDefault().sendTextMessage(number, null, messageToSend, null,null);
 //                Intent sendIntent = new Intent(Intent.ACTION_VIEW);
