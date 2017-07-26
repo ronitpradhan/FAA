@@ -72,17 +72,26 @@ public class Help extends AppCompatActivity{
                 this.startActivity(intent);
                 break;
             case R.id.item2:
-                intent = new Intent(Help.this, Settings.class);
+                intent = new Intent(Help.this, Fitness.class);
                 this.startActivity(intent);
                 break;
             case R.id.item3:
-                intent = new Intent(Help.this, Contact.class);
-                this.startActivity(intent);
-                break;
-            case R.id.item4:
                 intent = new Intent(Help.this, Help.class);
                 this.startActivity(intent);
                 break;
+            case R.id.item4:
+                intent = new Intent(Help.this, Settings.class);
+                this.startActivity(intent);
+                break;
+            case R.id.item5:
+                intent = new Intent(Help.this, Contact.class);
+                this.startActivity(intent);
+                break;
+            case R.id.item6:
+                intent = new Intent(Help.this, Table.class);
+                this.startActivity(intent);
+                break;
+
             default:
                 return super.onOptionsItemSelected(item);
         }

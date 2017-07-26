@@ -7,5 +7,24 @@
     <string name="nodata">\t\t\t\t\tSorry we do not have the information you are seeking (displayed above). Please re-check the spelling and go back to the home screen to enter the injury name again. Call the ambulance incase of emergency. \n\nNepal Red Cross Society Ambulance Number: 01-4228094 </string>
     <string name="contact_name">\nRonit Pradhan</string>
     <string name="contact_head">\n<u>CONTACT</u></string>
-    <string name="contact_details">\nEMAIL:\nrnt_ronit@hotmail.com\nronit288@gmail.com\n\nPHONE:\n9849471112\n9801071112</string>
+    <string name="contact_details">\nEMAIL:\nrnt_ronit@hotmail.com\nronit288@gmail.com\nronit.pradhan@deerwalk.edu.np\n\nPHONE:\n+977-9849471112\n+977-9801071112</string>
+
+    <string name="tableinfo">WHAT DOES IT MEAN? Look at the TABLE option from MENU!</string>
+
+    <string name="tablebmi">BMI:\n\t\tUnderweight= Less than 18.5\n\t\tNormal=18.5-24.9\n\t\tOverweight=25-29.9\n\t\tObesity= 30 or greater\n</string>
+
+    <string name="tablecal">Calories:\n\t\tCalculated= Maintenance\n\t\t-500 Calories= 1kg loss/week\n\t\t+500 Calories= 1kg gain/week\n </string>
+
+    <string name="lifestyle_prompt">Choose the lifestyle you live</string>
+
+    <string-array name="lifestyle">
+        <item>Sedentary (Very litle or no exercise)</item>
+        <item>Lightly active (Light exercise/Sports 1-3 days/week)</item>
+        <item>Moderately Active (Moderate exercise/Sports 3-5 days/week)</item>
+        <item>Very Active (Hard exercise/Sports 6-7 days/week)</item>
+        <item>Daily Exercise</item>
+        <item>Daily Intense Exercise/twice daily</item>
+        <item>Extra Active (Very Hard Exercise Daily/Sports and Physical Job or 2x training)</item>
+
+    </string-array>
 </resources>

@@ -56,17 +56,26 @@ public class Settings extends AppCompatActivity {
                 this.startActivity(intent);
                 break;
             case R.id.item2:
-                intent = new Intent(Settings.this, Settings.class);
+                intent = new Intent(Settings.this, Fitness.class);
                 this.startActivity(intent);
                 break;
             case R.id.item3:
-                intent = new Intent(Settings.this, Contact.class);
-                this.startActivity(intent);
-                break;
-            case R.id.item4:
                 intent = new Intent(Settings.this, Help.class);
                 this.startActivity(intent);
                 break;
+            case R.id.item4:
+                intent = new Intent(Settings.this, Settings.class);
+                this.startActivity(intent);
+                break;
+            case R.id.item5:
+                intent = new Intent(Settings.this, Contact.class);
+                this.startActivity(intent);
+                break;
+            case R.id.item6:
+                intent = new Intent(Settings.this, Table.class);
+                this.startActivity(intent);
+                break;
+
             default:
                 return super.onOptionsItemSelected(item);
         }

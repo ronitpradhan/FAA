@@ -34,21 +34,29 @@ public class Contact extends AppCompatActivity {
                 this.startActivity(intent);
                 break;
             case R.id.item2:
-                intent = new Intent(Contact.this, Settings.class);
+                intent = new Intent(Contact.this, Fitness.class);
                 this.startActivity(intent);
                 break;
             case R.id.item3:
-                intent = new Intent(Contact.this, Contact.class);
-                this.startActivity(intent);
-                break;
-            case R.id.item4:
                 intent = new Intent(Contact.this, Help.class);
                 this.startActivity(intent);
                 break;
+            case R.id.item4:
+                intent = new Intent(Contact.this, Settings.class);
+                this.startActivity(intent);
+                break;
+            case R.id.item5:
+                intent = new Intent(Contact.this, Contact.class);
+                this.startActivity(intent);
+                break;
+            case R.id.item6:
+                intent = new Intent(Contact.this, Table.class);
+                this.startActivity(intent);
+                break;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
-
         return true;
     }
 }

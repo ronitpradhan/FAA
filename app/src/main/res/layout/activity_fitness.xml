@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#111111"
+        android:paddingTop="50dp">
+
+        <Button
+            android:id="@+id/calories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calories"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="50dp"
+            android:onClick="caloriesFunction"/>
+        <Button
+            android:id="@+id/bmi"
+            android:layout_below="@+id/calories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BMI"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="50dp"/>
+        <Button
+            android:id="@+id/bmr"
+            android:layout_below="@+id/bmi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BMR"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="50dp"/>
+        <Button
+            android:id="@+id/bodyfat"
+            android:layout_below="@+id/bmr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BODY FAT %"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="50dp"/>
+        <Button
+            android:id="@+id/ffmi"
+            android:layout_below="@+id/bodyfat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FFMI"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="50dp"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#848484"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#333333"
+            android:text="@string/rights"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_gravity="bottom"
+            />
+    </LinearLayout>
+    </RelativeLayout>

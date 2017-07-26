@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:background="#111111"
+                android:id="@+id/bmitext"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tablebmi"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tablecal"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BodyFat% Chart"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"/>
+                <ImageView
+                    android:id="@+id/bf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="213dp"
+                    android:src="@drawable/bf"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="BodyFat% Chart" />
+                <TextView
+                    android:layout_below="@+id/bf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FFMI Chart"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="165dp"
+                    android:src="@drawable/ffmi"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="BodyFat% Chart"
+                    android:layout_weight="0.46" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

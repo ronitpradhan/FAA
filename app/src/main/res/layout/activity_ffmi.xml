@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#111111"
+    android:id="@+id/ffmitext">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="FFMI (Fat Free Mass Index)"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        />
+</LinearLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#848484"
+        android:layout_below="@+id/ffmitext">
+    <TextView
+        android:paddingTop="10dp"
+        android:id="@+id/weighttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:layout_below="@+id/weighttext"
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:inputType="numberDecimal"
+        android:textColorHint="#000000"
+        android:hint="in kg"
+
+        />
+    <TextView
+        android:layout_below="@+id/weight"
+        android:id="@+id/heighttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Height"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+    <EditText
+        android:id="@+id/heightft"
+        android:layout_below="@+id/heighttext"
+        android:layout_width="100dp"
+        android:layout_height="57dp"
+        android:inputType="numberDecimal"
+        android:textColorHint="#000000"
+        android:hint="ft"
+
+        />
+    <EditText
+        android:id="@+id/heightin"
+        android:layout_toRightOf="@id/heightft"
+        android:layout_below="@+id/heighttext"
+        android:layout_width="100dp"
+        android:layout_height="57dp"
+        android:inputType="numberDecimal"
+        android:textColorHint="#000000"
+        android:hint="in"
+        />
+        <TextView
+            android:layout_below="@+id/heightin"
+            android:id="@+id/bftext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Body Fat%"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/bfvalue"
+            android:layout_below="@+id/bftext"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:inputType="numberDecimal"
+            android:textColorHint="#000000"
+            android:hint="%(percentage)"
+
+            />
+    <Button
+        android:id="@+id/ffmibutton"
+        android:layout_below="@+id/bfvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:onClick="onClickffmi"
+        />
+
+    <TextView
+        android:layout_below="@+id/ffmibutton"
+        android:id="@+id/resulttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESULT:"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_below="@+id/resulttext"
+        android:id="@+id/callean"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        />
+        <TextView
+            android:layout_below="@+id/callean"
+            android:id="@+id/tableinfo"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:gravity="center"
+            android:text="@string/tableinfo"
+            />
+
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#848484"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#333333"
+            android:text="@string/rights"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_gravity="bottom"
+            />
+    </LinearLayout>
+</RelativeLayout>

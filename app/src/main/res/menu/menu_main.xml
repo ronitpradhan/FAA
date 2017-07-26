@@ -5,13 +5,18 @@
         android:title="HOME" />
     <item
         android:id="@+id/item2"
-        android:title="SETTINGS" />
+        android:title="FITNESS" />
     <item
         android:id="@+id/item3"
-        android:title="CONTACT" />
-    <item
-        android:id="@+id/item4"
         android:title="HELP" />
 
-
+    <item
+        android:id="@+id/item4"
+        android:title="SETTINGS" />
+    <item
+        android:id="@+id/item5"
+        android:title="CONTACT" />
+    <item
+        android:id="@+id/item6"
+        android:title="TABLE" />
 </menu>
