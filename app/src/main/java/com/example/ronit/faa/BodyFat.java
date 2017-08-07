@@ -132,6 +132,10 @@ public class BodyFat extends AppCompatActivity {
                 intent = new Intent(BodyFat.this, Contact.class);
                 this.startActivity(intent);
                 break;
+            case R.id.item6:
+                intent = new Intent(BodyFat.this, Table.class);
+                this.startActivity(intent);
+                break;
 
             default:
                 return super.onOptionsItemSelected(item);

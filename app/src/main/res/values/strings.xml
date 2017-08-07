@@ -1,7 +1,7 @@
 
 <resources>
     <string name="app_name">First-Help</string>
-    <string name="search_hint">Enter Injury!</string>
+    <string name="search_hint">Enter Injury Name!</string>
     <string name="search_button">Search</string>
     <string name="rights">All rights reserved by respective owners.</string>
     <string name="nodata">\t\t\t\t\tSorry we do not have the information you are seeking (displayed above). Please re-check the spelling and go back to the home screen to enter the injury name again. Call the ambulance incase of emergency. \n\nNepal Red Cross Society Ambulance Number: 01-4228094 </string>

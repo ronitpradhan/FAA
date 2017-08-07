@@ -78,6 +78,10 @@ public class Bmi extends AppCompatActivity{
                 intent = new Intent(Bmi.this, Contact.class);
                 this.startActivity(intent);
                 break;
+            case R.id.item6:
+                intent = new Intent(Bmi.this, Table.class);
+                this.startActivity(intent);
+                break;
 
             default:
                 return super.onOptionsItemSelected(item);

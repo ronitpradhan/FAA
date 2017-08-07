@@ -114,6 +114,10 @@ public class Bmr extends AppCompatActivity {
                 intent = new Intent(Bmr.this, Contact.class);
                 this.startActivity(intent);
                 break;
+            case R.id.item6:
+                intent = new Intent(Bmr.this, Table.class);
+                this.startActivity(intent);
+                break;
 
             default:
                 return super.onOptionsItemSelected(item);
