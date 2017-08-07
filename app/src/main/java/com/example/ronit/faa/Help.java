@@ -11,10 +11,10 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+
 /**
  * Created by RONIT on 11/3/2016.
  */
-
 public class Help extends AppCompatActivity{
     public static final String MY_PREFS_NAME = "PhonePreferences";
     @Override
@@ -36,7 +36,7 @@ public class Help extends AppCompatActivity{
                 String messageToSend = "Help!!! Its an emergency!!! Call an ambulance!!! I am injured!!! Call me!!!";
                 SharedPreferences settings = getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE);
                 String number = settings.getString("phone","");
-               //String number = "9849471112";
+                //String number = "9849471112";
 
                 //SmsManager.getDefault().sendTextMessage(number, null, messageToSend, null,null);
 //                Intent sendIntent = new Intent(Intent.ACTION_VIEW);

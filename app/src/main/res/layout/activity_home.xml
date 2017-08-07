@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#848484">
+
     <ImageView
 
         android:id="@+id/logo"
@@ -79,24 +80,26 @@
 
 
     </LinearLayout>
-
     <LinearLayout
         android:layout_below="@+id/linear2"
         android:id="@+id/linearbelow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#848484"
-        android:orientation="horizontal"></LinearLayout>
+        android:orientation="horizontal"> </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#333333"
-        android:text="@string/rights"
-        android:textColor="#ffffff"
-        android:textSize="15dp"
-        android:layout_gravity="bottom"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/textView3" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#333333"
+            android:text="@string/rights"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView3" />
+
+
+
 </RelativeLayout>

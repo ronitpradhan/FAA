@@ -89,7 +89,7 @@
                 android:layout_below="@+id/age"
                 android:layout_width="100dp"
                 android:layout_height="57dp"
-                android:inputType="numberDecimal"
+                android:inputType="number"
                 android:textColorHint="#000000"
                 android:hint="in yrs"/>
             <TextView
