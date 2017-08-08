@@ -70,7 +70,7 @@ public class Calories extends AppCompatActivity {
         double weight = Double.parseDouble(edit_weight.getText().toString());
         double ft = Double.parseDouble(edit_ft.getText().toString());
         double in = Double.parseDouble(edit_in.getText().toString());
-        double age = Double.parseDouble(edit_age.getText().toString());
+        int age = Integer.parseInt(edit_age.getText().toString());
 
         double height = ((ft * 12) + in) * 2.54;
 

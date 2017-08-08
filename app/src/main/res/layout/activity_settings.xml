@@ -32,19 +32,56 @@
         android:textColor="#000000"
         android:id="@+id/textView4"
         />
-    <EditText
-        android:layout_margin="10dp"
-        android:hint="Enter a 10-digit mobile number for Emergency SMS and click Submit button below!"
-        android:layout_below="@+id/textView4"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/smstext"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edit_Text2"/>
+        android:text="\nEmergency Number:"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView4"
+        android:textColor="#000000"/>
+    <EditText
+        android:id="@+id/edit_Text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/smstext"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Enter a 10-digit mobile number for Emergency SMS and click Submit button below!" />
+
+    <TextView
+        android:id="@+id/notetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\nNotification Time:"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/edit_Text1"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/edit_Text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/notetext"
+        android:layout_margin="10dp"
+        android:hint="Enter the hour in 24hr format i.e. 11pm is 23!" />
+    <EditText
+        android:id="@+id/edit_Text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/edit_Text2"
+        android:layout_margin="10dp"
+        android:hint="Enter the minute (00-60)" />
     <Button
-        android:id="@+id/number_button"
+        android:id="@+id/number_button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
-        android:layout_below="@id/edit_Text2"
+        android:layout_below="@id/edit_Text3"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         />
